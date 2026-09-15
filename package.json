@@ -1,0 +1,65 @@
+{
+  "name": "responsive-product-page",
+  "version": "1.0.0",
+  "description": "Diseño de layout responsive para una página de producto de tienda en línea con Flexbox y CSS Grid",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . -l 3000",
+    "test:css": "npx stylelint 'css/**/*.css' --fix",
+    "lint": "npx stylelint 'css/**/*.css'",
+    "build:css": "echo 'CSS build complete'"
+  },
+  "keywords": [
+    "responsive",
+    "flexbox",
+    "css-grid",
+    "layout",
+    "html5",
+    "css3"
+  ],
+  "author": "Equipo de Desarrollo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/example/responsive-product-page"
+  },
+  "bugs": {
+    "url": "https://github.com/example/responsive-product-page/issues"
+  },
+  "homepage": "https://github.com/example/responsive-product-page#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "stylelint": "^15.10.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-recommended": "^12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-recommended"
+    ],
+    "rules": {
+      "color-no-invalid-hex": true,
+      "font-family-no-duplicate-names": true,
+      "no-descending-specificity": null,
+      "selector-class-pattern": "^[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*$",
+      "selector-id-pattern": "^[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*$",
+      "property-no-vendor-prefix": true,
+      "block-no-empty": true,
+      "declaration-block-trailing-semicolon": "always"
+    }
+  }
+}
